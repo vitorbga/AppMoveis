@@ -1,0 +1,7 @@
+{
+  "name": "PRAQ",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

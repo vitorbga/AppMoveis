@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ProjApp</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/html" href="/node_module/primeicons/primeicons.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="manifest" href="manifest.webmanifst">
+        <meta name="theme-color" content="#1976d2">
+    </head>
+    <body>
+        
+        <div class="form-singin">
+            <div class="p-fluid">
+                <div class="text-align: center">
+                    <img [src]="logo" alt="" height="34%">
+                </div>
+                <div>
+                    <h2 class="tit" style="text-align: center;">LOGIN</h2>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="usuairo" type="text" pInputText>
+                        <label for="usuario">
+                            NOME DE USUARIO
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="passwd" type="text" pInputText>
+                        <label for="passwd">
+                            SENHA
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a href="/home" pButton label="LOGIN" class="p-button"></a>
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a href="/registrar" pButton label="REGISTRE-SE" class="p-button"></a>
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a href="/recsenha" pButton label="RECUPERAR SENHA" class="p-button-text"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

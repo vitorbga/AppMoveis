@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Recuperar Senha</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/html" href="/node_module/primeicons/primeicons.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="manifest" href="manifest.webmanifst">
+        <meta name="theme-color" content="#1976d2">
+    </head>
+    <body>
+        <div class="form-singin">
+            <div class="p-fluid">
+                <div class="text-align: center">
+                    <img [src]="logo" alt="" height="34%">
+                </div>
+                <div>
+                    <h2 class="tit" style="text-align: center;">RECUPERAR SENHA</h2>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="ususairo" type="text" pInputText>
+                        <label for="ususario">
+                            NOME DE USUARIO
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="email" type="text" pInputText>
+                        <label for="email">
+                            E-MAIL
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a pButton type="button" label="RECUPERAR SENHA" (click)="envioConfirmado()"></a>
+                </div>
+                <div class="alert" id="trigger">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    RECUPERAÇÃO DE SENHA CONFIRMADA! CLIQUE EM 'VOLTAR' PARA VOLTAR.
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a href="/login" pButton type="button" class="p-button" label="VOLTAR"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

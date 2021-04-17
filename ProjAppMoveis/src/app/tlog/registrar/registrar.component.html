@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Recuperar Senha</title>
+        <base href="/">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/html" href="/node_module/primeicons/primeicons.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="manifest" href="manifest.webmanifst">
+        <meta name="theme-color" content="#1976d2">
+    </head>
+    <body>
+        <div class="form-singin">
+            <div class="p-fluid">
+                <div class="text-align: center">
+                    <img [src]="logo" alt="" height="34%">
+                </div>
+                <div>
+                    <h2 class="tit" style="text-align: center;">REGISTRE-SE</h2>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="usuairo" type="text" pInputText>
+                        <label for="usuario">
+                            NOME DE USUARIO
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="senha" type="text" pInputText>
+                        <label for="senha">
+                            SENHA
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="csenha" type="text" pInputText>
+                        <label for="csenha">
+                            CONFIRMAR SENHA
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2" style="margin-top:20px">
+                    <span class="p-float-label">
+                        <input id="email" type="text" pInputText>
+                        <label for="email">
+                            E-MAIL
+                        </label>
+                    </span>
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <button pButton type="button" label="REGISTRAR" (click)="envioConfirmado()"></button>
+                </div>
+                <div class="alert" id="trigger">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    REGISTRO CONFIRMADO! CLIQUE EM 'VOLTAR' PARA VOLTAR.
+                </div>
+                <div class="p-field p-col-12 p-mb-2">
+                    <a href="/login" pButton type="button" class="p-button" label="VOLTAR"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

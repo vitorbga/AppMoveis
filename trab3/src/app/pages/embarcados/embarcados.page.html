@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Embarcados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/perfil']" color="dark">VOLTAR</ion-button>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">DESCRIÇÃO</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">FIRMWARE</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">STATUS</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">COMUNICAÇÃO</ion-label>
+      <ion-select value=" " okText="CONFIRMAR" cancelText="CANCELAR">
+        <ion-select-option value="EST">ESTAÇÃO</ion-select-option>
+        <ion-select-option value="CLI">CLIENTE</ion-select-option>
+        <ion-select-option value="ROT">ROTEADOR</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">IP</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">MAC</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">IP GATEWAY</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">PORTA</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">MQTT</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/perfil']" type="submit" color="dark" expand="block" (click)="presentAlertConfirm()">CADASTRAR</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

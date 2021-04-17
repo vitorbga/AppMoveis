@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@capacitor/core": "2.4.7"
+  }
+}

@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button [routerLink]="['/salas']" color="dark">Acessar Ambientes</ion-button>
+  <ion-button [routerLink]="['/embarcados']" color="dark">Acessar Embarcados</ion-button>
+  <ion-button (click)="navegar()" color="danger">SAIR</ion-button>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>RECUPERAR SENHA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">EMAIL</ion-label>
+      <ion-input type="email" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/login']" type="submit" color="dark" expand="block" (click)="presentAlertConfirm()">ENVIAR</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <small>
+      ADICIONE O EMAIL PARA RECUPERAÇÃO DA SENHA.
+    </small>
+  </form>
+</ion-content>

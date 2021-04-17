@@ -1,0 +1,13 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "trab3",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
